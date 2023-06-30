@@ -1,0 +1,25 @@
+.table-heading { 
+    color: teal;
+}
+
+body {
+    background-color: darkslategray;
+}
+
+
+@media (max-width: 1000px) {
+    .table-heading {
+        color: pink;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* Styles applied when the viewport width is 768px or greater than body */
+    body {
+        background-color: lightblue !important;
+    }
+}
+
+*{
+    font-family: 'Pathway Extreme', sans-serif;
+}

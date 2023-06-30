@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@300;600;900&display=swap" rel="stylesheet">
+    <!-- Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="sstyle.css">
+    <title>Navbar & Sidenav</title>
+</head>
+<body class="grey-text text-darken-3">
+    <div class="navbar-fixed">
+        <nav class="blue lighten-2">
+            <div class="container">
+                <div class="nav wrapper">
+                    <a href="" class="brand-logo">Axcel - Dom</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li class="active">
+                            <a href="navbar-side.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="navbar-side.html">About</a>
+                        </li>
+                        <li>
+                            <a href="navbar-side.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown-trigger" data-target="dropdown-menu">
+                                <i class="material-icons right">arrow_drop_down
+
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown-menu" class="dropdown-content">
+            <li>
+                <a href="">JS</a>
+            </li>
+            <li>
+                <a href="">React</a>
+            </li>
+            <li>
+                <a href="">NodeJS</a>
+            </li>
+        </ul>
+    </div>
+    <!-- SideNav Structure -->
+    <a href="#" data-target="slide-out" class="sidenav-trigger">
+        <i class="material-icons left">menu</i></a>
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="images/img1.jpg" alt="">
+                </div>
+                <a href="">
+                    <img src="images/img3.jpg" alt="" class="circle">
+                </a>
+                <a href="">
+                    <span class="white-text name">Anthony Brett</span>
+                </a>
+                <a href="">
+                    <span class="white-text email">anthony_brett@gmail.com</span>
+                </a>
+            </div>
+        </li>
+        <li>
+            <a href="">JS</a>
+        </li>
+        <li>
+            <a href="">React</a>
+        </li>
+        <li>
+            <a href="">NodeJS</a>
+        </li>
+    </ul>
+
+    <!--Grid-->
+    <h1 class="teal-text text-lighten-2 center">Grid</h1>
+    <div class="divider"></div>
+    <div class="container">
+        <br>
+        <p> We are using a standard 12 column fluid responsive grid system. The grid helps you layout your page in an ordered, easy fashion.</p>
+
+        <h3 class="teal-text text-lighten-2">Container</h3>
+        <p>The container class is not strictly part of the grid but is important in laying out content. It allows you to center your page content.</p>
+
+        <p class="flow-text">Demo</p>
+        <p>Try the button below to see what the page looks like without containers.</p>
+        <button class="btn">Turn on Container</button>
+    </div>
+
+
+
+
+
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            // Dropdown Init
+            $('.dropdown-trigger').dropdown ();
+            // Sidenav Init
+            $('.sidenav').sidenav();
+        });
+    </script>
+</body>
+</html>
